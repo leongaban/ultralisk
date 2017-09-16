@@ -5,4 +5,4 @@ const tickerLisk = 'https://api.coinmarketcap.com/v1/ticker/lisk/';
 
 export const getLisk = () => axios.get(tickerLisk)
   .catch((err) => { throw err; })
-  .then(res => res);
+  .then(res => res.data[0]);

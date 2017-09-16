@@ -18,6 +18,30 @@
   background: -webkit-linear-gradient(top, rgba(255,92,92,.1) 0%,rgba(254,144,144,.1) 55%,rgba(254,187,187,.1) 100%);
   background: linear-gradient(to bottom, rgba(255,92,92,.1) 0%,rgba(254,144,144,.1) 55%,rgba(254,187,187,.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#febbbb',GradientType=0 );
+
+  .lisk-price {
+    float: left;
+    margin: 20px 0 0 20px;
+  }
+
+  a {
+    color: $pink;
+    text-decoration: underline;
+    &:hover {
+      color: lighten($pink, 10%);
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    float: right;
+    margin: 20px 20px 0 0;
+
+    li {
+      float: left;
+      margin-right: 10px;
+    }
+  }
 }
 
 .hero {
@@ -46,14 +70,5 @@
     color: $ultra2;
     line-height: 28px;
     list-style: disc;
-  }
-
-  a {
-    color: $pink;
-    text-decoration: underline;
-    &:hover {
-      color: lighten($pink, 10%);
-      text-decoration: none;
-    }
   }
 }

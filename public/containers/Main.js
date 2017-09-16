@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import * as api from '../services/api';
 
 // Actions
 // import {
@@ -22,14 +23,36 @@ import { withRouter } from 'react-router-dom';
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      price: 0
+    };
+  }
+
+  componentWillMount() {
+    api.getLisk().then((lisk) => {
+      console.log('lisk', lisk);
+      this.setState({
+        price: lisk.price_usd
+      });
+    });
   }
 
   render() {
+    const price = this.state.price;
     return (
       <div className="bg">
         <div className="main">
-          <header className="hero">
+          <header>
+            <div className="lisk-price">Lisk Price ${price}</div>
+            <nav>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><Link to={'/members'}>Members</Link></li>
+                <li><a href="#about">My Rewards</a></li>
+              </ul>
+            </nav>
+          </header>
+          <main className="hero">
             <img src="/static/imgs/gem.png" alt="gem" />
             <h1>
               <em className="ultra1">ULTRA</em>
@@ -46,7 +69,7 @@ class Main extends Component {
                 <li>Current reward requirements: Vote for <a href="https://explorer.lisk.io/address/1605683440295884021L">ultralisk</a> & <a href="https://explorer.lisk.io/address/16811843780664295310L">leon</a></li>
               </ul>
             </section>
-          </header>
+          </main>
         </div>
       </div>
     );
