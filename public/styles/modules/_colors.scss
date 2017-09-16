@@ -3,17 +3,17 @@
 ========================================================= */
 
 // Primary
-// $blue: 	#024562;
-// $green:  #249B7A;
-// $orange: #FC913A;
-// $red: 	#F25A43;
-// $gray:	#454545;
+$ultra1: #9AA8B4;
+$ultra2: #AFD2DE;
+$ultra3: #BBD1D8;
 
-// Brands
-// $facebook: #438acb;
-// $twitter:  #5cbde9;
+$pink: #B1A5B3;
+
+.ultra1 { color: $ultra1; }
+.ultra2 { color: $ultra2; }
+.ultra3 { color: $ultra3; }
 
 // Elements
-$body: #fff;
+$body: #000;
 // $button: $blue;
 // $buttonHover: lighten($blue, 10%);

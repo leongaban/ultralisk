@@ -27,11 +27,27 @@ class Main extends Component {
 
   render() {
     return (
-      <div>
-        <header />
-        <section>
-          Hello World! Welcome to Ultraliks.io
-        </section>
+      <div className="bg">
+        <div className="main">
+          <header className="hero">
+            <img src="/static/imgs/gem.png" alt="gem" />
+            <h1>
+              <em className="ultra1">ULTRA</em>
+              <em className="ultra2">LISK</em>
+              <em className="ultra3">POOL</em>
+            </h1>
+
+            <section>
+              <h3>Hello! We are a <strong><a href="https://lisk.io/">Lisk</a></strong> forging delegate pool.</h3>
+              <ul>
+                <li>Our rewards are 50% back to voters</li>
+                <li>Small pool (7 members max)</li>
+                <li>Weekly payouts (Minimum 1LSK)</li>
+                <li>Current reward requirements: Vote for <a href="https://explorer.lisk.io/address/1605683440295884021L">ultralisk</a> & <a href="https://explorer.lisk.io/address/16811843780664295310L">leon</a></li>
+              </ul>
+            </section>
+          </header>
+        </div>
       </div>
     );
   }
