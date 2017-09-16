@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import * as api from '../services/api';
 
+// utils
+import { round } from '../utils/math';
+
 // Actions
 // import {
 //   addCurrentUser,
@@ -30,7 +33,6 @@ class Main extends Component {
 
   componentWillMount() {
     api.getLisk().then((lisk) => {
-      console.log('lisk', lisk);
       this.setState({
         price: lisk.price_usd
       });
@@ -43,7 +45,7 @@ class Main extends Component {
       <div className="bg">
         <div className="main">
           <header>
-            <div className="lisk-price">Lisk Price ${price}</div>
+            <div className="lisk-price">Lisk Price ${round(price)}</div>
             <nav>
               <ul>
                 <li><a href="#about">About</a></li>
@@ -55,8 +57,7 @@ class Main extends Component {
           <main className="hero">
             <img src="/static/imgs/gem.png" alt="gem" />
             <h1>
-              <em className="ultra1">ULTRA</em>
-              <em className="ultra2">LISK</em>
+              <em className="ultra1">ULTRALISK</em>
               <em className="ultra3">POOL</em>
             </h1>
 

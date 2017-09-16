@@ -1,0 +1,81 @@
+.bg {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-image:url("/static/imgs/background.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.main {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,92,92);
+  background: -moz-linear-gradient(top, rgba(255,92,92,.1) 0%, rgba(254,144,144,.1) 55%, rgba(254,187,187,.1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,92,92,.1) 0%,rgba(254,144,144,.1) 55%,rgba(254,187,187,.1) 100%);
+  background: linear-gradient(to bottom, rgba(255,92,92,.1) 0%,rgba(254,144,144,.1) 55%,rgba(254,187,187,.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#febbbb',GradientType=0 );
+
+  .lisk-price {
+    float: left;
+    margin: 20px 0 0 20px;
+    color: white;
+  }
+
+  header { font-size: em(18); }
+
+  nav {
+    float: right;
+    margin: 20px 20px 0 0;
+
+    a {
+      color: lighten($pink, 20%);
+    }
+
+    li {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+
+  a {
+    color: $pink;
+    text-decoration: underline;
+    &:hover {
+      color: lighten($pink, 10%);
+      text-decoration: none;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 640px;
+
+  h1 {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: em(64);
+    font-weight: 700;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: em(20);
+    color: $ultra1;
+  }
+
+  section { width: 100%; }
+
+  li {
+    margin-left: 20px;
+    color: $ultra2;
+    line-height: 28px;
+    list-style: disc;
+  }
+}
