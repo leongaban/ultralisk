@@ -1,0 +1,28 @@
+{
+  presets: [
+    'react',
+    'es2015',
+    'stage-0',
+    'stage-1',
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [ "last 2 Chrome versions" ]
+        }
+      }
+    ]
+  ],
+  env: {
+    // start: {
+    //   presets: [
+    //     "react-hmre"
+    //   ]
+    // },
+    // dev: {
+    //   presets: [
+    //     "react-hmre"
+    //   ]
+    // }
+  }
+}
