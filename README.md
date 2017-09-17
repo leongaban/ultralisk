@@ -1,6 +1,8 @@
 # ultralisk
 
-The Ultralisk Pool website | ultralisk.io
+## A Lisk forging pool
+
+### The Ultralisk Pool website | ultralisk.io
 
 - Our rewards are 50% back to voters
 - Small pool (7 members max)
