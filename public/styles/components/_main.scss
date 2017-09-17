@@ -22,11 +22,7 @@
 
   .lisk-price { float: left; margin: 20px 0 0 20px; color: white; }
 
-  header {
-    position: fixed;
-    z-index: 10;
-    font-size: em(18);
-  }
+  header { position: fixed; z-index: 10; font-size: em(18); }
 
   nav {
     position: fixed;
