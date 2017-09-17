@@ -1,27 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
+import Particles from 'react-particles-js';
+
 import * as api from '../services/api';
+
+import particlesConfig from '../static/libs/particles.json'
 
 // utils
 import { round } from '../utils/math';
 
 // Actions
-// import {
-//   addCurrentUser,
-//   searchUser
-// } from '../../actions';
-
-// State Cleaner
-// import { cleanMapStateToProps } from '../../utils/redux';
 
 // Containers
-// import Body from './Body';
-// import ServicesContainer from '../Services/ServicesContainer';
-// import UsersContainer from '../Users/usersContainer';
 
 // Components
-// import { Header, Sidebar } from '../../components';
 
 class Main extends Component {
   constructor(props) {
@@ -37,6 +30,10 @@ class Main extends Component {
         price: lisk.price_usd
       });
     });
+
+    // particlesJS.load('particles-js', '/static/libs/particles.json', function() {
+    //   console.log('callback - particles.js config loaded');
+    // });
   }
 
   render() {
@@ -55,6 +52,9 @@ class Main extends Component {
             </nav>
           </header>
           <main className="hero">
+            <div className="particles-container">
+              <Particles params={particlesConfig} />
+            </div>
             <img src="/static/imgs/gem.png" alt="gem" />
             <h1>
               <em className="ultra1">ULTRALISK</em>

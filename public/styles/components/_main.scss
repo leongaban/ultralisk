@@ -51,9 +51,18 @@
   }
 }
 
+.particles-container {
+  position: absolute;
+  width: 200px;
+  height: 380px;
+  canvas {
+    height: 380px !important;
+  }
+}
+
 .hero {
   position: relative;
-  top: 50px;
+  top: 70px;
   margin: 0 auto;
   width: 640px;
 
