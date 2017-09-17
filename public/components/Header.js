@@ -23,8 +23,8 @@ class Header extends Component {
     });
   }
 
-  scrollToAbout() {
-    this.aboutDiv = document.getElementById('about');
+  scrollToAbout(view) {
+    this.aboutDiv = document.getElementById(view);
     this.aboutDiv.tabIndex = '-1';
     this.aboutDiv.focus();
   }
@@ -36,9 +36,9 @@ class Header extends Component {
         <div className="lisk-price" title={roundUSD(price)}>Lisk Price ${round(price)}</div>
         <nav>
           <ul>
-            <li><button onClick={() => this.scrollToAbout()}>About</button></li>
+            <li><button onClick={() => this.scrollToAbout('about')}>About</button></li>
             <li><a href="https://medium.com/ultralisk">Blog</a></li>
-            <li><a href="#members" title="All Ultralisk Members">Members</a></li>
+            <li><button onClick={() => this.scrollToAbout('members')}>Members</button></li>
             <li><a href="#rewards" title="Your lisk rewards">My Rewards</a></li>
           </ul>
         </nav>

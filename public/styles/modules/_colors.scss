@@ -8,6 +8,10 @@ $pink: #B1A5B3;
 $dimGray: #877171;
 $darkSlateGray: #584848;
 
+$limeGreen: #CEF7C7;
+$armyGreen: #81A77C;
+$beetRed: #521C34;
+
 .ultra1 { color: $ultra1; }
 .ultra2 { color: $ultra2; }
 .ultra3 { color: $ultra3; }
@@ -15,6 +19,21 @@ $darkSlateGray: #584848;
 .pink { color: $pink; }
 .dim-gray { color: $dimGray; }
 .dark-slate-gray { color: $darkSlateGray; }
+
+.green { color: $armyGreen; }
+.red { color: $beetRed; }
+
+.bg-red {
+  background: $beetRed;
+}
+
+.bg-green {
+  background: $armyGreen;
+}
+
+.bg-army-green {
+  background: $armyGreen;
+}
 
 // Elements
 $body: #000;

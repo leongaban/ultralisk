@@ -5,7 +5,8 @@ import React, { Component } from 'react';
 import {
   Header,
   Hero,
-  About
+  About,
+  Members
 } from '../components';
 
 class MainContainer extends Component {
@@ -23,6 +24,7 @@ class MainContainer extends Component {
           <Header />
           <Hero />
           <About />
+          <Members />
         </div>
       </div>
     );

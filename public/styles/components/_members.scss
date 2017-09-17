@@ -1,0 +1,21 @@
+#members {
+  margin: 0 auto;
+  width: 640px;
+  height: 700px;
+}
+
+.members-content {
+  position: relative;
+  // top: 200px;
+  color: $ultra1;
+
+  td {
+    padding: 10px;
+    width: 100px;
+    border: 1px dotted $darkSlateGray;
+    // &:first-child { width: 120px; }
+    // &:nth-child(2),
+    // &:nth-child(3),
+    // &:last-child { width: 100px; }
+  }
+}
