@@ -55,7 +55,11 @@ class Main extends Component {
             <div className="particles-container">
               <Particles params={particlesConfig} />
             </div>
-            <img src="/static/imgs/gem.png" alt="gem" />
+
+            <div className="obelisk">
+              <img src="/static/imgs/gem.png" alt="gem" />
+            </div>
+
             <h1>
               <em className="ultra1">ULTRALISK</em>
               <em className="ultra3">POOL</em>
