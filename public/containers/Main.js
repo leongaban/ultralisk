@@ -51,6 +51,7 @@ class Main extends Component {
               </ul>
             </nav>
           </header>
+
           <main className="hero">
             <div className="particles-container">
               <Particles params={particlesConfig} />

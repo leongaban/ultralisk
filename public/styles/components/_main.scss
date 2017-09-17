@@ -31,9 +31,7 @@
     float: right;
     margin: 20px 20px 0 0;
 
-    a {
-      color: lighten($pink, 20%);
-    }
+    a { color: lighten($pink, 20%); }
 
     li {
       float: left;
@@ -53,11 +51,16 @@
 
 .particles-container {
   position: absolute;
+  z-index: 2;
   width: 200px;
   height: 380px;
-  canvas {
-    height: 380px !important;
-  }
+  canvas { height: 380px !important; }
+}
+
+.obelisk {
+  position: relative;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
 .hero {
@@ -87,9 +90,4 @@
     line-height: 28px;
     list-style: disc;
   }
-}
-
-.obelisk {
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
 }
