@@ -1,4 +1,3 @@
-/* eslint-disable (max-len) */
 import React from 'react';
 import Particles from 'react-particles-js';
 import particlesConfig from '../static/libs/particles.json';
