@@ -9,6 +9,8 @@
 
 Current reward requirements: Vote for [ultralisk](https://explorer.lisk.io/address/1605683440295884021L) & [leon](https://explorer.lisk.io/address/16811843780664295310L))
 
+[Buy Lisk with Changelly](https://changelly.com?ref_id=167324d59a32)
+
 `npm / yarn install`
 
 `npm / yarn build`
