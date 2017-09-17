@@ -5,6 +5,8 @@ $ultra3: #BBD1D8;
 
 $pink: #B1A5B3;
 
+$grayRust: #424242;
+
 $dimGray: #877171;
 $darkSlateGray: #584848;
 
@@ -23,17 +25,11 @@ $beetRed: #521C34;
 .green { color: $armyGreen; }
 .red { color: $beetRed; }
 
-.bg-red {
-  background: $beetRed;
-}
+.bg-red { background: $beetRed; }
 
-.bg-green {
-  background: $armyGreen;
-}
+.bg-green { background: $armyGreen; }
 
-.bg-army-green {
-  background: $armyGreen;
-}
+.bg-army-green { background: $armyGreen; }
 
 // Elements
 $body: #000;

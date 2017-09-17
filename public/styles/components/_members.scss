@@ -12,12 +12,23 @@
     margin-right: 10px;
   }
 
-  td {
-    padding: 10px;
-    width: 100px;
-    border: 1px dotted $darkSlateGray;
-    &:first-child {
-      width: 140px;
+  thead {
+    td {
+      background: $grayRust;
     }
+  }
+
+  td {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    width: 120px;
+    border: 1px dotted $darkSlateGray;
+    &:first-child { width: 140px; }
+  }
+
+  a {
+    position: relative;
+    top: -14px;
   }
 }
