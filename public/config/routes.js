@@ -12,7 +12,7 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={MainContainer} />
       <Route path="/members" component={MembersContainer} />
-      <Route path="/members" component={RewardsContainer} />
+      <Route path="/rewards" component={RewardsContainer} />
     </Switch>
   </HashRouter>
 );
