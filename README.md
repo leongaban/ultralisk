@@ -2,7 +2,7 @@
 
 #### The Ultralisk Pool website | ultralisk.io
 
-- A Lisk forging pool
+- A [Lisk](https://lisk.io) forging pool
 - Our rewards are 50% back to voters
 - Small pool (7 members max)
 - Weekly payouts (Minimum 1 LSK)
