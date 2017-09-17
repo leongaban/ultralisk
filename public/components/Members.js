@@ -35,7 +35,6 @@ class Members extends Component {
               <tr>
                 <td>Name</td>
                 <td>Rank</td>
-                <td>Forging</td>
                 <td>Required</td>
               </tr>
             </thead>
@@ -43,19 +42,16 @@ class Members extends Component {
               <tr>
                 <td><a href="https://explorer.lisk.io/address/1605683440295884021L">ultralisk</a></td>
                 <td>336</td>
-                <td className="red">inactive</td>
                 <td className="dark-slate-gray bg-green">required</td>
               </tr>
               <tr>
                 <td><a href="https://explorer.lisk.io/address/16811843780664295310L">leon</a></td>
                 <td>365</td>
-                <td className="red">inactive</td>
                 <td className="dark-slate-gray bg-green">required</td>
               </tr>
               <tr>
                 <td><a href="https://explorer.lisk.io/address/6421464900349122157L">mrpibbs</a></td>
                 <td>1062</td>
-                <td className="red">inactive</td>
                 <td className="bg-red">not required</td>
               </tr>
             </tbody>
