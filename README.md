@@ -14,3 +14,5 @@ Current reward requirements: Vote for [ultralisk](https://explorer.lisk.io/addre
 `yarn build`
 
 `yarn start`
+
+`http://localhost:8080/#/`

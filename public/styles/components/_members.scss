@@ -1,11 +1,12 @@
 #members {
   margin: 0 auto;
   width: 640px;
-  height: 1000px;
+  height: 900px;
 }
 
 .members-content {
   position: relative;
+  top: 100px;
   color: $ultra1;
 
   img { margin-right: 10px; }
@@ -28,7 +29,5 @@
 
 .changelly-section {
   margin: 100px auto 0;
-  iframe {
-    overflow-y: hidden; border: none;
-  }
+  iframe { overflow-y: hidden; border: none; }
 }
