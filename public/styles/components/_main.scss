@@ -51,7 +51,6 @@
 
 .particles-container {
   position: absolute;
-  z-index: 2;
   width: 200px;
   height: 380px;
   canvas { height: 380px !important; }
@@ -74,6 +73,7 @@
     width: 100%;
     font-size: em(64);
     font-weight: 700;
+    text-shadow: 2px 2px 4px black; 
   }
 
   h3 {

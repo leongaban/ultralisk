@@ -5,10 +5,10 @@ import Particles from 'react-particles-js';
 
 import * as api from '../services/api';
 
-import particlesConfig from '../static/libs/particles.json'
+import particlesConfig from '../static/libs/particles.json';
 
 // utils
-import { round } from '../utils/math';
+import { round, roundUSD } from '../utils/math';
 
 // Actions
 
@@ -42,12 +42,12 @@ class Main extends Component {
       <div className="bg">
         <div className="main">
           <header>
-            <div className="lisk-price">Lisk Price ${round(price)}</div>
+            <div className="lisk-price" title={roundUSD(price)}>Lisk Price ${round(price)}</div>
             <nav>
               <ul>
-                <li><a href="#about">About</a></li>
-                <li><Link to={'/members'}>Members</Link></li>
-                <li><a href="#about">My Rewards</a></li>
+                <li><a href="#about" title="About Ultralisk">About</a></li>
+                <li><Link to={'/members'} title="All Ultralisk Members">Members</Link></li>
+                <li><a href="#about" title="Your lisk rewards">My Rewards</a></li>
               </ul>
             </nav>
           </header>
@@ -63,7 +63,7 @@ class Main extends Component {
 
             <h1>
               <em className="ultra1">ULTRALISK</em>
-              <em className="ultra3">POOL</em>
+              <em className="dim-gray">POOL</em>
             </h1>
 
             <section>
