@@ -64,9 +64,7 @@ class Members extends Component {
               title="changelly"
               className="changelly"
               scrolling="no"
-            >
-              Can't load widget
-            </iframe>
+            />
           </section>
         </div>
       </section>
