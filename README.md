@@ -9,10 +9,10 @@
 
 Current reward requirements: Vote for [ultralisk](https://explorer.lisk.io/address/1605683440295884021L) & [leon](https://explorer.lisk.io/address/16811843780664295310L))
 
-`yarn install`
+`npm / yarn install`
 
-`yarn build`
+`npm / yarn build`
 
-`yarn start`
+`npm / yarn start`
 
 `http://localhost:8080/#/`
