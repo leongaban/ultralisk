@@ -3,7 +3,8 @@ import { browserHistory, HashRouter, Route, Switch } from 'react-router-dom';
 
 import {
   MainContainer,
-  MembersContainer
+  MembersContainer,
+  RewardsContainer
 } from '../containers';
 
 const Routes = () => (
@@ -11,6 +12,7 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={MainContainer} />
       <Route path="/members" component={MembersContainer} />
+      <Route path="/members" component={RewardsContainer} />
     </Switch>
   </HashRouter>
 );

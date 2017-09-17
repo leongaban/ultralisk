@@ -3,7 +3,7 @@ import MembersContainer from './Members';
 import RewardsContainer from './Rewards';
 
 export {
-  MembersContainer,
   MainContainer,
+  MembersContainer,
   RewardsContainer
 };

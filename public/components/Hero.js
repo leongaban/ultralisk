@@ -18,12 +18,12 @@ const Hero = () => (
     </h1>
 
     <section>
-      <h3>Hello! We are a passionate <strong><a href="https://lisk.io/">Lisk</a></strong> forging delegate pool.</h3>
+      <h3>Hello! We are a passionate <a href="https://lisk.io/">Lisk</a> forging delegate pool.</h3>
       <ul>
         <li>Our rewards are 50% back to voters</li>
         <li>Small pool (7 members max)</li>
         <li>Weekly payouts (Minimum 1 LSK)</li>
-        <li>Current reward requirements: Vote for <a href="https://explorer.lisk.io/address/1605683440295884021L">ultralisk</a> & <a href="https://explorer.lisk.io/address/16811843780664295310L">leon</a></li>
+        <li>Current reward requirements: Vote for <a href="https://explorer.lisk.io/address/1605683440295884021L" title="Lisk delegate Ultralisk">ultralisk</a> & <a href="https://explorer.lisk.io/address/16811843780664295310L" title="Lisk delegate Leon">leon</a></li>
       </ul>
     </section>
   </main>);

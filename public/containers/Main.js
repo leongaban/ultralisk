@@ -2,9 +2,11 @@
 import React, { Component } from 'react';
 
 // Components
-import Hero from '../components/Hero';
-import Header from '../components/Header';
-import About from '../components/About';
+import {
+  Header,
+  Hero,
+  About
+} from '../components';
 
 class MainContainer extends Component {
   constructor(props) {

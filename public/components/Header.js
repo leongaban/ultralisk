@@ -37,6 +37,7 @@ class Header extends Component {
         <nav>
           <ul>
             <li><button onClick={() => this.scrollToAbout()}>About</button></li>
+            <li><a href="https://medium.com/ultralisk">Blog</a></li>
             <li><a href="#members" title="All Ultralisk Members">Members</a></li>
             <li><a href="#rewards" title="Your lisk rewards">My Rewards</a></li>
           </ul>
