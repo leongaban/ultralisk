@@ -8,14 +8,10 @@
   position: relative;
   color: $ultra1;
 
-  img {
-    margin-right: 10px;
-  }
+  img { margin-right: 10px; }
 
   thead {
-    td {
-      background: $grayRust;
-    }
+    td { background: $grayRust; }
   }
 
   td {
@@ -27,8 +23,5 @@
     &:first-child { width: 140px; }
   }
 
-  a {
-    position: relative;
-    top: -14px;
-  }
+  a { position: relative; top: -14px; }
 }
