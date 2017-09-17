@@ -1,5 +1,6 @@
 .bg {
   position: fixed;
+  overflow-y: auto;
   z-index: 10;
   width: 100%;
   height: 100%;
@@ -9,39 +10,33 @@
 }
 
 .main {
-  position: absolute;
+  position: relative;
   z-index: 9;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: rgb(255,92,92);
   background: -moz-linear-gradient(top, rgba(255,92,92,.1) 0%, rgba(254,144,144,.1) 55%, rgba(254,187,187,.1) 100%);
   background: -webkit-linear-gradient(top, rgba(255,92,92,.1) 0%,rgba(254,144,144,.1) 55%,rgba(254,187,187,.1) 100%);
   background: linear-gradient(to bottom, rgba(255,92,92,.1) 0%,rgba(254,144,144,.1) 55%,rgba(254,187,187,.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#febbbb',GradientType=0 );
 
-  .lisk-price {
-    float: left;
-    margin: 20px 0 0 20px;
-    color: white;
-  }
+  .lisk-price { float: left; margin: 20px 0 0 20px; color: white; }
 
-  header { font-size: em(18); }
+  header { position: fixed; font-size: em(18); }
 
   nav {
-    float: right;
+    position: fixed;
+    right: 0;
     margin: 20px 20px 0 0;
-
-    a { color: lighten($pink, 20%); }
-
-    li {
-      float: left;
-      margin-right: 15px;
-    }
+    li { float: left; margin-right: 15px; }
   }
 
-  a {
-    color: $pink;
+  a, button {
+    padding: 0;
+    color: lighten($pink, 20%);
     text-decoration: underline;
+    background: none;
+    border: none;
     &:hover {
       color: lighten($pink, 10%);
       text-decoration: none;
@@ -73,7 +68,7 @@
     width: 100%;
     font-size: em(64);
     font-weight: 700;
-    text-shadow: 2px 2px 4px black; 
+    text-shadow: 2px 2px 4px black;
   }
 
   h3 {

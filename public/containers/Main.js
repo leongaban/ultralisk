@@ -1,6 +1,8 @@
+/* eslint-disable (max-len) */
+/* eslint-disable (no-multi-spaces) */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import Particles from 'react-particles-js';
 
 import * as api from '../services/api';
@@ -22,6 +24,8 @@ class Main extends Component {
     this.state = {
       price: 0
     };
+
+    this.scrollToAbout = this.scrollToAbout.bind(this);
   }
 
   componentWillMount() {
@@ -30,10 +34,12 @@ class Main extends Component {
         price: lisk.price_usd
       });
     });
+  }
 
-    // particlesJS.load('particles-js', '/static/libs/particles.json', function() {
-    //   console.log('callback - particles.js config loaded');
-    // });
+  scrollToAbout() {
+    this.aboutDiv = document.getElementById('about');
+    this.aboutDiv.tabIndex = '-1';
+    this.aboutDiv.focus();
   }
 
   render() {
@@ -45,9 +51,12 @@ class Main extends Component {
             <div className="lisk-price" title={roundUSD(price)}>Lisk Price ${round(price)}</div>
             <nav>
               <ul>
-                <li><a href="#about" title="About Ultralisk">About</a></li>
-                <li><Link to={'/members'} title="All Ultralisk Members">Members</Link></li>
-                <li><a href="#about" title="Your lisk rewards">My Rewards</a></li>
+                <li>
+                  <button onClick={() => this.scrollToAbout()}>About</button>
+                  {/* <a href="#about" title="About Ultralisk">About</a> */}
+                </li>
+                <li><a href="#members" title="All Ultralisk Members">Members</a></li>
+                <li><a href="#rewards" title="Your lisk rewards">My Rewards</a></li>
               </ul>
             </nav>
           </header>
@@ -76,6 +85,15 @@ class Main extends Component {
               </ul>
             </section>
           </main>
+
+          <section id="about">
+            <h1>About Us</h1>
+            <p>We are a group of developers, cryptocurrency enthusiasts and friends. As such, we are huge fans of Lisk and all the potential it brings to help expand and grow adoption of blockchain technology.</p>
+
+            <p>This is the dawn of the Internet of Money, and with that comes all the benefits of Decentralized systems and apps. People gaining control back of their own money, new assets being created as better stores of value and wealth, and antiquated financial systems which are prone to hacks being disrupted.</p>
+
+            <p><strong>Lisk</strong> is platform which will help drive this progress forward. And we are here to support the network and give back to the community.</p>
+          </section>
         </div>
       </div>
     );

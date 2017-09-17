@@ -1,0 +1,21 @@
+#about {
+  position: relative;
+  // top: 200px;
+  margin: 200px auto 0;
+  width: 640px;
+  height: 640px;
+
+  color: $ultra1;
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: em(24);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+}
