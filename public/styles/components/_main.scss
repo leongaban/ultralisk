@@ -38,11 +38,11 @@
 
   a, button {
     padding: 0;
-    color: lighten($pink, 20%);
+    color: $limeGreen;
     text-decoration: underline;
     background: none;
     border: none;
-    &:hover { color: lighten($pink, 10%); text-decoration: none; }
+    &:hover { color: lighten($limeGreen, 10%); text-decoration: none; }
   }
 
   h1 {

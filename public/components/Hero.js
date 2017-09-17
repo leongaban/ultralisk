@@ -19,7 +19,7 @@ const Hero = () => (
 
     <section>
       <h3>Hello! We are a passionate <a href="https://lisk.io/">Lisk</a> forging delegate pool.</h3>
-      <ul>
+      <ul className="bullet-points">
         <li>Our rewards are 50% back to voters</li>
         <li>Small pool (7 members max)</li>
         <li>Weekly payouts (Minimum 1 LSK)</li>
