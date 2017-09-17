@@ -1,13 +1,11 @@
 #about {
   position: relative;
-  // top: 200px;
-  margin: 200px auto 0;
+  margin: 250px auto 0;
   width: 640px;
-  height: 640px;
-
+  height: 720px;
   color: $ultra1;
 
-  h1 {
+  h2 {
     margin-bottom: 10px;
     font-size: em(24);
     font-weight: 700;
@@ -18,4 +16,8 @@
     margin-bottom: 20px;
     line-height: 28px;
   }
+}
+
+.how-we-help {
+  margin-top: 80px;
 }
