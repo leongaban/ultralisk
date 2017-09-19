@@ -17,4 +17,8 @@ Current reward requirements: Vote for [ultralisk](https://explorer.lisk.io/addre
 
 `npm / yarn start`
 
+Deploy to now.sh
+
+`now deploy ultralisk`
+
 `http://localhost:8080/#/`

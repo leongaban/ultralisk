@@ -5,7 +5,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import path from 'path';
 import chalk from 'chalk';
 
-const dist = path.resolve(__dirname, 'dist');
+const ultralisk = path.resolve(__dirname, 'ultralisk');
 const pub = path.resolve(__dirname, 'public');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -24,7 +24,7 @@ const CopyWebpackPluginConfig = new CopyWebpackPlugin([{ from: 'public/static', 
 
 const PATHS = {
   pub,
-  build: dist
+  build: ultralisk
 };
 
 const LAUNCH_COMMAND = process.env.npm_lifecycle_event;
@@ -64,7 +64,7 @@ const base = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader'],
-          publicPath: dist
+          publicPath: ultralisk
         })
       }
     ],
@@ -85,7 +85,7 @@ const base = {
 const developmentConfig = {
   devServer: {
     publicPath: '',
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'ultralisk'),
     quiet: true,
     inline: true,
     compress: true,

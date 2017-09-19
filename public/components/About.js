@@ -8,7 +8,7 @@ const About = () => (
 
     <p>This is the dawn of the Internet of Money, and with that comes all the benefits of Decentralized systems and apps. People gaining more control of their own money and new assets being created as better stores of value and wealth.</p>
 
-    <p><strong>Lisk</strong> is platform which will help drive this progress forward. And we are here to support the network and give back to the community.</p>
+    <p><strong>Lisk</strong> is a platform which will help drive this progress forward. And we are here to support the network and give back to the community.</p>
 
     <div>
       <h3>Goals and roadmap for the Ultralisk Pool</h3>

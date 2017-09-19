@@ -14,6 +14,13 @@
     "test": "eslint app",
     "test:fix": "eslint --fix app"
   },
+  "now": {
+    "name": "ultralisk",
+    "engines": {
+      "node": "7.4.x"
+    },
+    "alias": "ultralisk.io"
+  },
   "jest": {
     "moduleNameMapper": {},
     "moduleFileExtensions": [
