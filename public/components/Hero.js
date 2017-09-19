@@ -8,8 +8,12 @@ const Hero = () => (
       <Particles params={particlesConfig} />
     </div>
 
-    <div className="obelisk">
+    <div className="obelisk hide-720">
       <img src="/static/imgs/gem.png" alt="gem" />
+    </div>
+
+    <div className="obelisk show-720">
+      <img src="/static/imgs/gem_small.png" alt="gem" />
     </div>
 
     <h1>

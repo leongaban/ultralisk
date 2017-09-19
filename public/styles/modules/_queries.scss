@@ -1,6 +1,4 @@
-/*  Responsive media queries
-============================================================
-========================================================= */
+.show-720 { display: none; }
 
 /* 1280
 ========================================================= */
@@ -12,24 +10,28 @@
 @media all and (max-width: 1000px) {
 }
 
-/* 800
+/* 720
 ========================================================= */
-@media all and (max-width: 800px) {
+@media all and (max-width: 720px) {
+  .hide-720 { display: none  }
+
+  .show-720 { display: block  }
+
+  .main {
+    padding: 0 20px;
+    h1 { font-size: em(86); }
+  }
 }
 
 /* 640
 ========================================================= */
 @media all and (max-width: 640px) {
   .hero {
-    // top: 20px;
     width: 80%;
 
-    h1 { font-size: em(48); }
+    h1 { font-size: em(64); }
 
-    h3 {
-      font-size: em(16);
-      line-height: 24px;
-    }
+    h3 { font-size: em(16); line-height: 24px; }
 
     li { font-size: em(14); }
   }
